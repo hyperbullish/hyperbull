@@ -35,7 +35,7 @@
   --color-deep: var(--deep);
   --color-panel: var(--panel);
   --color-gold: var(--gold);
-  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Kanit", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Orbitron", ui-monospace, monospace;
 }
@@ -90,7 +90,9 @@
   h3,
   h4 {
     font-family: var(--font-display);
-    letter-spacing: -0.02em;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: -0.01em;
   }
 }
 
@@ -99,6 +101,34 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+/* Wordmark styling that mirrors the logo lettering: heavy italic, chrome sheen */
+@utility wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
+
+@utility wordmark-chrome {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  background: linear-gradient(
+    180deg,
+    oklch(1 0 0) 0%,
+    oklch(0.93 0.01 250) 42%,
+    oklch(0.72 0.04 250) 58%,
+    oklch(0.99 0 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 8px color-mix(in oklab, var(--bright) 55%, transparent));
 }
 
 @utility glass {
