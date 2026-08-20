@@ -29,9 +29,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 26, filter: "blur(10px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-            className="mt-4 text-[clamp(3.5rem,13vw,9rem)] font-black uppercase leading-[0.85]"
+            className="wordmark mt-4 text-[clamp(3.5rem,13vw,9rem)] leading-[0.9]"
           >
-            Hyper
+            <span className="wordmark-chrome">Hyper</span>
             <br />
             <span className="text-hyper">Bull</span>
           </motion.h1>
