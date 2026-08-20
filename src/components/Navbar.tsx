@@ -36,8 +36,9 @@ export function Navbar() {
             className="h-10 w-10 shrink-0 rounded-full border border-cyan/40 object-cover"
             style={{ boxShadow: "var(--shadow-glow)" }}
           />
-          <span className="truncate text-lg font-black uppercase tracking-[0.18em]">
-            Hyper<span className="text-hyper">Bull</span>
+          <span className="wordmark truncate text-xl sm:text-2xl">
+            <span className="wordmark-chrome">Hyper</span>
+            <span className="text-hyper">Bull</span>
           </span>
         </a>
 

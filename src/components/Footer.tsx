@@ -15,8 +15,9 @@ export function Footer() {
                 style={{ boxShadow: "var(--shadow-glow)" }}
               />
               <div className="min-w-0">
-                <p className="truncate text-lg font-black uppercase tracking-[0.18em]">
-                  Hyper<span className="text-hyper">Bull</span>
+                <p className="wordmark truncate text-2xl">
+                  <span className="wordmark-chrome">Hyper</span>
+                  <span className="text-hyper">Bull</span>
                 </p>
                 <p className="font-mono text-[10px] tracking-[0.28em] text-cyan uppercase">
                   The Hyper Era Begins.
