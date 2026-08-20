@@ -6,6 +6,7 @@ import { BornHistory } from "@/components/BornHistory";
 import { MemeGallery } from "@/components/MemeGallery";
 import { CommunityTweet } from "@/components/CommunityTweet";
 import { TokenSection } from "@/components/TokenSection";
+import { LiveChart } from "@/components/LiveChart";
 import { BuyCTA } from "@/components/BuyCTA";
 import { Footer } from "@/components/Footer";
 import { BUY_URL, CA, X_URL, ASSETS } from "@/lib/hyper";
@@ -146,6 +147,7 @@ function Index() {
         <MemeGallery />
         <CommunityTweet />
         <TokenSection />
+        <LiveChart />
         <BuyCTA />
       </main>
       <Footer />
