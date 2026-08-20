@@ -144,10 +144,10 @@ function Index() {
         <Hero />
         <Thesis />
         <BornHistory />
+        <LiveChart />
         <MemeGallery />
         <CommunityTweet />
         <TokenSection />
-        <LiveChart />
         <BuyCTA />
       </main>
       <Footer />
