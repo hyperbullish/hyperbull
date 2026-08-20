@@ -64,8 +64,8 @@ export function MemeGallery() {
             <Close className="h-5 w-5" />
           </button>
           <img
-            src={MEMES[active].src}
-            alt={MEMES[active].alt}
+            src={MEMES[active]?.src}
+            alt={MEMES[active]?.alt ?? "HyperBull meme"}
             className="max-h-[85vh] w-auto max-w-full rounded-2xl border border-cyan/40"
             style={{ boxShadow: "var(--shadow-glow-strong)" }}
             onClick={(e) => e.stopPropagation()}
